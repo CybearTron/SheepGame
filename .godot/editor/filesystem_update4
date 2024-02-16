@@ -1,4 +1,3 @@
 res://Scenes/Player/player.tscn
 res://Scripts/Player/player.gd
 res://Scenes/Worlds/place_holder_world.tscn
-res://Scripts/Global/FPS.gd

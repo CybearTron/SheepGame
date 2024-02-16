@@ -1,2 +1,5 @@
+CollisionShape2D
+Area2D
+TileMap
 Label
 Camera2D
