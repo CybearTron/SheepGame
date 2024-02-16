@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="Sheep Game"
+run/main_scene="res://Scenes/Worlds/place_holder_world.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Fps="*res://Scripts/Global/FPS.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/smoothing/plugin.cfg")
 
 [rendering]
 

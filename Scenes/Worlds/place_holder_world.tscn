@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq4d7get1usum"]
+
+[ext_resource type="Texture2D" uid="uid://cg0p83qlb4a0k" path="res://icon.svg" id="1_vtpsu"]
+[ext_resource type="PackedScene" uid="uid://di3y2w527r1k8" path="res://Scenes/Player/player.tscn" id="2_tkwnx"]
+
+[node name="PlaceHolderWorld" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(0.211765, 0.0745098, 0.00392157, 1)
+position = Vector2(-3, 108)
+scale = Vector2(20, 20)
+texture = ExtResource("1_vtpsu")
+
+[node name="Player" parent="." instance=ExtResource("2_tkwnx")]
+position = Vector2(4, 24)
