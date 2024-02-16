@@ -19,3 +19,10 @@ texture = ExtResource("1_ad0j2")
 shape = SubResource("CapsuleShape2D_ckw61")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="TestLabel" type="Label" parent="."]
+offset_left = -37.0
+offset_top = -104.0
+offset_right = 45.0
+offset_bottom = -81.0
+text = "Rest"

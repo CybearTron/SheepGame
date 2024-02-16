@@ -21,7 +21,7 @@ Fps="*res://Scripts/Global/FPS.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/smoothing/plugin.cfg")
+enabled=PackedStringArray()
 
 [rendering]
 
