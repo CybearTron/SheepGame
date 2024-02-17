@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnfqgbhr320qh"]
+
+[ext_resource type="Script" path="res://Scripts/NPC/other_sheep.gd" id="1_3aerg"]
+[ext_resource type="Texture2D" uid="uid://cg0p83qlb4a0k" path="res://icon.svg" id="2_6uu1b"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3pb2l"]
+radius = 24.0
+height = 128.0
+
+[node name="otherSheep" type="CharacterBody2D" groups=["sheep"]]
+script = ExtResource("1_3aerg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.14902, 0.482353, 0.368627, 1)
+scale = Vector2(0.375, 1)
+texture = ExtResource("2_6uu1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_3pb2l")

@@ -1,23 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://di3y2w527r1k8"]
+[gd_scene load_steps=5 format=3 uid="uid://di3y2w527r1k8"]
 
 [ext_resource type="Texture2D" uid="uid://cg0p83qlb4a0k" path="res://icon.svg" id="1_ad0j2"]
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_ear7w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ckw61"]
-radius = 34.0
-height = 126.0
+radius = 16.0
+height = 64.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_df6jw"]
+radius = 19.0
+height = 66.0
 
 [node name="Player" type="CharacterBody2D"]
-motion_mode = 1
 script = ExtResource("1_ear7w")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.999996, 1)
+position = Vector2(-1.78814e-07, -1.19209e-07)
 scale = Vector2(0.305, 0.555)
 texture = ExtResource("1_ad0j2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(0.5, 0.5)
 shape = SubResource("CapsuleShape2D_ckw61")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -32,3 +34,6 @@ text = "Rest"
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_df6jw")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

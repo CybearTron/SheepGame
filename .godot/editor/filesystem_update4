@@ -1,3 +1,5 @@
 res://Scenes/Player/player.tscn
-res://Scripts/Player/player.gd
 res://Scenes/Worlds/place_holder_world.tscn
+res://Scripts/Player/player.gd
+res://Scripts/NPC/other_sheep.gd
+res://Scenes/NPCs/other_sheep.tscn
